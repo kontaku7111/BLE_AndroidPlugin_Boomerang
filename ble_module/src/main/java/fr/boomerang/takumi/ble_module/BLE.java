@@ -64,12 +64,14 @@ public class BLE {
     private BluetoothGattCharacteristic mBluetoothGattCharacteristic;
     private ArrayList<BluetoothDevice> deviceList = new ArrayList<>();
 
+    // Must change deviceName and these UUIDs depending on the device and the application you want to use////
     private static String deviceName = "my-ble";
     private static final String CUSTOM_SERVICE_UUID = "BF9CB85F-620C-4A67-BDD2-1A64213F74CA";
     private static final String NOTIFY_CHARACTERISTIC_UUID = "5F83E23F-BCA1-42B3-B6F2-EA82BE46A93D";
     private static final String CUSTOM_CHARACTERISTIC_CONFIG = "00002902-0000-1000-8000-00805f9b34fb";
     private static final String READ_CHARACTERISTIC_UUID = "1126BF32-321F-44A3-847B-BBC373D7B32C";
     private static final String WRITE_CHARACTERISTIC_UUID = "330C0F34-9E86-4D00-95D5-669E6C6A5ACA";
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     private final static String TAG = BLE.class.getSimpleName();
     private static final int REQUEST_ENABLE_BT = 1;
